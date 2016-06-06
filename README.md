@@ -10,7 +10,7 @@
 ------
 >When Activity's onSaveInstanceState is called. Activity will automatically collect View's State from every single View in the View hierachy. Please note that only View that is implemented View State Saving/Restoring internally that could be collected the data from. Once onRestoreInstanceState is called. Activity will send those collected data back to the View in the View hierachy that provides the same android:id as it is collected from one by one.
 
->Thoes View's state are automatically saved but the Activity's member variables are not. They will be destroyed along with Activity. You have to manually save and restore them through onSaveInstanceState and onRestoreInstanceState method
+>Thoes View's state are automatically saved because it's already implemented onSaveInstanceState and onRestoreInstanceState method but the Activity's member variables are not. They will be destroyed along with Activity. You have to manually save and restore them through onSaveInstanceState and onRestoreInstanceState method
 
 #### What Spara can do?
 ------
